@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#5f7995" />
+    <meta name="author" content="Jeremy Keith" />
+    <meta name="description" content="Chapter One: Foundations" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@adactio" />
+    <meta name="twitter:creator" content="@adactio" />
+    <meta
+      name="twitter:title"
+      property="og:title"
+      content="Resilient Web Design—Chapter 1"
+    />
+    <meta
+      name="twitter:description"
+      property="og:description"
+      content="Chapter One: Foundations"
+    />
+    <meta
+      name="twitter:url"
+      property="og:url"
+      content="https://resilientwebdesign.com/chapter1/"
+    />
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="https://resilientwebdesign.com/chapter1/images/medium/sir-tim-berners-lee.jpg"
+    />
+    <title>Resilient Web Design—Chapter 1</title>
+    <link
+      rel="preload"
+      href="../fonts/etbookot-roman-webfont.woff2"
+      crossorigin
+      type="font/woff2"
+      as="font"
+    />
+    <link rel="preload" href="../js/scripts.js" as="script" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="contents" href="../contents/" />
+    <link rel="author" href="../author/" />
+    <link rel="prev" href="../introduction/" />
+    <link rel="next prefetch" href="../chapter2/" />
+    <link
+      rel="license"
+      href="https://creativecommons.org/licenses/by-sa/4.0/"
+    />
+    <link rel="amphtml" href="amp.html" />
+    <link rel="manifest" href="../manifest.json" />
+    <link
+      rel="icon shortcut"
+      href="../images/icon512.png"
+      sizes="512x512"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../images/icon512.png"
+      type="image/png"
+    />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <a href="../">Mastering C++ IN 10 DAYS</a>
+    </header>
+
+    <main>
+      <h1><span>Chapter 1:</span> Understanding C++ Syntax</h1>
+      <p>In this module  we will dissect the code from the previous lesson and go through it step by step in order to understand what exactly the anatomy of a C++ program/ file comprises of ?</p>
+      <h4>Code snippet: Baseline C++ code:</h4>
+      <code>
+        #include <iostream>
+        using namespace std;
+        
+        int main() {
+          cout << "Hello World!";
+          return 0;
+        }
+    </code>
+    <ul>
+        <li><p>In the [#include <iostream>] we are basically importing  the iostream library that comes inbuilt with C++ by default. And in this case this library [iostream] lets us work with inputting and outputting objects, such as cout (used in line 5).  Imports are also called Header files in C++ and they add functionality to C++ programs as just with our code alone we can only do so little compared to the libraries that come already shipped with C++.</p></li>
+        <li><p>In the [using namespace std] , this basically means that we can use names for objects and variables from the standard library of C++.</p></li>
+        <p><strong>Note:</strong> The [#include <iostream>] and [using namespace std]  are by default something that (almost) always appears in a C++ program thus there is no need to keep ranting about what it means as by default they'll always be in our code for it to run.</p>
+        <li><p>In the [int main()] part of our code, int is called a function in C++ and any code inside its curly brackets curly braces  '{}' will be executed. thus all code in the  curly braces of a function is always executed</p></li>
+        <li><p>In the [cout << "Hello World!";] usually pronounced "see-out" the cout is an object used together with the insertion operator (<<) to output/print text. In our example it will output "Hello World".</p></li>
+        <li><p>In the  [return 0]  is where the main function ends .</p></li>
+        <p><strong>Note:</strong>
+            <ul>
+                <li>Every C++ statement ends with a semicolon ;.</li>
+                <li>The C++ compiler ignores blank spaces in our code .</li>
+            </ul>
+        </p>
+    </ul>
+    </main>
+
+    <nav>
+      <a href="../chapter2/" rel="next"
+        ><cite><span>Chapter 2:</span> Comments and Output</cite></a
+      >
+      <ol start="0">
+        <li>
+          <a href="../introduction/"><cite>Introduction</cite></a>
+        </li>
+        <li>
+          <a href="../chapter1/"
+            ><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter2/"
+            ><cite><span>Chapter 2</span> Comments and Output</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter3/"
+            ><cite><span>Chapter 3</span> Visions</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter4/"
+            ><cite><span>Chapter 4</span> Languages</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter5/"
+            ><cite><span>Chapter 5</span> Layers</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter6/"
+            ><cite><span>Chapter 6</span> Steps</cite></a
+          >
+        </li>
+        <li>
+          <a href="../chapter7/"
+            ><cite><span>Chapter 7</span> Challenges</cite></a
+          >
+        </li>
+        <li>
+          <a href="../author/" rel="author"><cite>About the author</cite></a>
+        </li>
+        <li>
+          <a href="../index/"><cite>Index</cite></a>
+        </li>
+      </ol>
+    </nav>
+
+    <footer>
+      <p>
+        <cite>Resilient Web Design</cite> was written and produced by
+        <a href="https://adactio.com" class="v‐card">Jeremy Keith</a>, and
+        typeset in
+        <a href="https://edwardtufte.github.io/et-book/"><abbr>ET</abbr> Book</a
+        >.
+      </p>
+      <p>
+        <small
+          >Licensed under a
+          <a
+            rel="license"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            >Creative Commons Attribution‐ShareAlike 4.0
+            International License</a
+          >.</small
+        >
+      </p>
+    </footer>
+
+    <script src="../js/scripts.js" defer></script>
+  </body>
+</html>
