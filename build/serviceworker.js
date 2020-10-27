@@ -1,7 +1,7 @@
 'use strict';
 
 // Import Jake's polyfill for async waitUntil
-importScripts('/js/async-waituntil.js');
+importScripts('./js/async-waituntil.js');
 
 const version = 'v0.044::';
 const staticCacheName = version + 'static';
