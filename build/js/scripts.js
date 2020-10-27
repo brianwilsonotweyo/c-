@@ -2,7 +2,7 @@
 
 if ('serviceWorker' in navigator) {
     // If service workers are supported
-    navigator.serviceWorker.register('/serviceworker.js');
+    navigator.serviceWorker.register('../serviceworker.js');
 } else if ('applicationCache' in window) {
     // Otherwise inject an iframe to use appcache
     var iframe = document.createElement('iframe');
