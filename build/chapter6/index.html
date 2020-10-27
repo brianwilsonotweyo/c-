@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="theme-color" content="#5f7995" />
+<meta name="author" content="Jeremy Keith" />
+<meta name="description" content="Chapter Two: Materials" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Chapter 2" />
+<meta name="twitter:description" property="og:description" content="Chapter Two: Materials" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/chapter2/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/chapter2/images/medium/zengarden.png" />
+<title>Mastering C++ IN 10 DAYS</title>
+<link rel="preload" href="../fonts/etbookot-roman-webfont.woff2" crossorigin type="font/woff2" as="font" />
+<link rel="preload" href="../js/scripts.js" as="script" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="contents" href="../contents/" />
+<link rel="author" href="../author/" />
+<link rel="prev" href="../chapter1/" />
+<link rel="next prefetch" href="../chapter3/" />
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+<link rel="amphtml" href="amp.html" />
+<link rel="manifest" href="../manifest.json" />
+<link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+<a href="../">Mastering C++ IN 10 DAYS</a>
+</header>
+
+<main>
+
+<h1><span>Chapter 6:</span> C++ Operators</h1>
+<p>Operators are used to perform operations on variables and values.</p>
+<p>In the example below, we use the + operator to add together two values:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e9aee3ee7751427368938e7712b82bcd.js"></script>
+<p><strong>Note: </strong> Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/4fd4fc02cdbb974d7cc59926f89a6d4e.js"></script>
+<h5>Arithmetic Operators</h5>
+<table class="table" style="color: dodgerblue;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Operator</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>+</td>
+        <td>Addition</td>
+        <td>Adds together two values</td>
+        <td>X+Y</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>-</td>
+        <td>Subtraction</td>
+        <td>Subtracts one value from another</td>
+        <td>X-Y</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>*</td>
+        <td>Multiplication</td>
+        <td>Multiplies two values</td>
+        <td>X*Y</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>/</td>
+        <td>Division</td>
+        <td>Divides one value by another</td>
+        <td>X/Y</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>%</td>
+        <td>Modulus</td>
+        <td>Returns the division remainder</td>
+        <td>X%Y</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>++</td>
+        <td>Increment</td>
+        <td>Increases the value of a variable by 1</td>
+        <td>++X</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>--</td>
+        <td>Decrement</td>
+        <td>Decreases the value of a variable by 1</td>
+        <td>--X</td>
+      </tr>
+    </tbody>
+  </table>
+<h4>Logical Operators</h4>
+<p>Logical operators are used to determine the logic between variables or values:</p>
+<table class="table" style="color: dodgerblue;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Operator</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>&&</td>
+        <td>Logical and</td>
+        <td>Returns true if both statements are true</td>
+        <td>x < 5 &&  x < 10</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>||</td>
+        <td>Logical or</td>
+        <td>Returns true if one of the statements is true</td>
+        <td>x < 5 || x < 4</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>!</td>
+        <td>Logical not</td>
+        <td>Reverse the result, returns false if the result is true</td>
+        <td>!(x < 5 && x < 10)</td>
+      </tr>
+    </tbody>
+  </table>
+<h4>Comparison Operators</h4>
+<p>Comparison operators are used to compare two values.</p>
+<p><strong>Note: </strong>The return value of a comparison is either true (1) or false (0).</p>
+<p>In the following example, we use the greater than operator (>) to find out if 5 is greater than 3:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e4365870174d3beefececfb89a3c311b.js"></script>
+<h5>A list of all comparison operators</h5>
+<table class="table" style="color: dodgerblue;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Operator</th>
+        <th scope="col">Name</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>==</td>
+        <td>Equal to</td>
+        <td>x == y</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>!=</td>
+        <td>Not equal</td>
+        <td>x != y</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>></td>
+        <td>Greater than</td>
+        <td>x > y</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td><</td>
+        <td>Less than</td>
+        <td>x < y</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>>=</td>
+        <td>Greater than or equal to</td>
+        <td>x >= y</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td><=</td>
+        <td>Less than or equal to</td>
+        <td>x <= y</td>
+      </tr>
+    </tbody>
+  </table>
+<h4>Assignment Operators</h4>
+<p>In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:</p>
+<p>Assignment operators are used to assign values to variables.</p>
+<script src="https://gist.github.com/brianwilsonotweyo/6486690e7a9a7c7a3a278bf5ff30319a.js"></script>
+<p>The addition assignment operator (+=) adds a value to a variable:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/7a9590939521da6e96b37c710a8349fc.js"></script>
+<p><strong>All Assignment Operators</strong></p>
+<table class="table" style="color: dodgerblue;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Operator</th>
+        <th scope="col">Example</th>
+        <th scope="col">Same As</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>=</td>
+        <td>x = 5</td>
+        <td>x = 5</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>+=</td>
+        <td>x += 3</td>
+        <td>x = x + 3</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>-=</td>
+        <td>x -= 3</td>
+        <td>x = x - 3</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>*=</td>
+        <td>x *= 3</td>
+        <td>x = x * 3</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>/=</td>
+        <td>x /= 3</td>
+        <td>x = x / 3</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>%=</td>
+        <td>x %= 3</td>
+        <td>x = x % 3</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>&=</td>
+        <td>x &= 3</td>
+        <td>x = x & 3</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>|=</td>
+        <td>x |= 3</td>
+        <td>x = x | 3</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>^=</td>
+        <td>x ^= 3</td>
+        <td>x = x ^ 3</td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>>>=</td>
+        <td>x >>= 3</td>
+        <td>x = x >> 3</td>
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td><<=</td>
+        <td>x <<= 3</td>
+        <td>x = x << 3</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</main>
+
+<nav>
+<a href="../chapter7/" rel="next"><cite><span>Chapter 7:</span> C++ Strings</cite></a>
+<ol start="0">
+    <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+    <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
+    <li><a href="../chapter2/"><cite><span>Chapter 2</span> Comments and Output</cite></a></li>
+    <li><a href="../chapter3/"><cite><span>Chapter 3</span> C++ Variables</cite></a></li>
+    <li><a href="../chapter4/"><cite><span>Chapter 4</span> C++ User Input</cite></a></li>
+    <li><a href="../chapter5/"><cite><span>Chapter 5</span> C++ Data Types</cite></a></li>
+    <li><a href="../chapter7/"><cite><span>Chapter 7</span> C++ Strings</cite></a></li>
+</ol>
+</nav>
+
+<footer>
+    <p><cite>Mastering C++ <br />IN 10 DAYS</cite> was written and produced by <a href="https://brianotweyo.heroku.com" class="v-card" rel="me">Brian Wilson Otweyo</a></p>
+    </footer>
+
+<script src="../js/scripts.js" defer></script>
+</body>
+</html>

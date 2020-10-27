@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="theme-color" content="#5f7995" />
+<meta name="author" content="Jeremy Keith" />
+<meta name="description" content="Chapter Two: Materials" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Chapter 2" />
+<meta name="twitter:description" property="og:description" content="Chapter Two: Materials" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/chapter2/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/chapter2/images/medium/zengarden.png" />
+<title>Mastering C++ IN 10 DAYS</title>
+<link rel="preload" href="../fonts/etbookot-roman-webfont.woff2" crossorigin type="font/woff2" as="font" />
+<link rel="preload" href="../js/scripts.js" as="script" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="contents" href="../contents/" />
+<link rel="author" href="../author/" />
+<link rel="prev" href="../chapter1/" />
+<link rel="next prefetch" href="../chapter3/" />
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+<link rel="amphtml" href="amp.html" />
+<link rel="manifest" href="../manifest.json" />
+<link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+<a href="../">Mastering C++ IN 10 DAYS</a>
+</header>
+
+<main>
+
+<h1><span>Chapter 7:</span> C++ Strings</h1>
+<p>Strings are used for storing text.</p>
+<p>A string variable contains a collection of characters surrounded by double quotes:</p>
+<p>To use strings, you must include an additional header file in the source code, the <string> library:</p>
+    <script src="https://gist.github.com/brianwilsonotweyo/49d598283b327a3c8916fef946577a48.js"></script>
+<h4>C++ String Concatenation</h4> 
+<p>The + operator can be used between strings to add them together to make a new string. This is called concatenation:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/3dd204497f7815fa7b782dad655ca21b.js"></script>
+<p>to create a space between John and Doe on output. we add a space with quotes (" " or ' '):</p>
+<h4>Append</h4>
+<p>A string in C++ is actually an object, which contain functions that can perform certain operations on strings. For example, you can also concatenate strings with the append() function:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/ac4e7e040838b83cfc306563edc51be3.js"></script>
+<h5>Adding Numbers and Strings</h5>
+<p>If you add two strings, the result will be a string concatenation:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/82950c85152162d39261330fd3b6c1b3.js"></script>
+<p>If you try to add a number to a string, an error occurs:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/42ef2db7731c05424f0124d2d707e24c.js"></script>
+<h4>String Length</h4>
+<p>To get the length of a string, use the length() function:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/230984de214d76b4acef183d07b2c44b.js"></script>
+<p><strong>Note: </strong>You might see some C++ programs that use the size() function to get the length of a string. This is just an alias of length(). It is completely up to you if you want to use length() or size():</p>
+<script src="https://gist.github.com/brianwilsonotweyo/f39d018e8782558663586ecc9aad40e4"></script> 
+<h5>Access Strings</h5>
+<p>You can access the characters in a string by referring to its index number inside square brackets [].</p>
+<p>This example prints the first character in myString:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/d60fa5d21e84233a6709e7e52df28126.js"></script>
+<h4>Change String Characters</h4>
+<p>To change the value of a specific character in a string, refer to the index number, and use single quotes:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/6727ecaa281fe52e34f8caf85c9e9fdb.js"></script>
+<h4>User Input Strings</h4>
+<p>It is possible to use the extraction operator >> on cin to display a string entered by a user:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/2dabde2e305f2f323c2670bdef61fdb8.js"></script>
+<p>However, cin considers a space (whitespace, tabs, etc) as a terminating character, which means that it can only display a single word (even if you type many words):</p>
+<p>From the example above, you would expect the program to print "John Doe", but it only prints "John".</p>
+<p>That's why, when working with strings, we often use the</p>
+<script src="https://gist.github.com/brianwilsonotweyo/230591be7bf9f21585e07fb917cea631.js"></script>
+<p>function to read a line of text. It takes</p>
+<script src="https://gist.github.com/brianwilsonotweyo/2000f55cbb8150cffc5379a763684343.js"></script>
+<p>as the first parameter, and the string variable as second:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/c3967388121ad3b20be21db10d6771fd.js"></script>
+<h4>Omitting Namespace</h4>
+<p>You might see some C++ programs that runs without the standard namespace library. The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for string (and cout) objects:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/67aef1b1ea98b4687ade16c49ade8512.js"></script>
+</main>
+
+<nav>
+<!-- <a href="../chapter8/" rel="next"><cite><span>Chapter 8:</span> C++ Strings</cite></a> -->
+<ol start="0">
+    <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+    <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
+    <li><a href="../chapter2/"><cite><span>Chapter 2</span> Comments and Output</cite></a></li>
+    <li><a href="../chapter3/"><cite><span>Chapter 3</span> C++ Variables</cite></a></li>
+    <li><a href="../chapter4/"><cite><span>Chapter 4</span> C++ User Input</cite></a></li>
+    <li><a href="../chapter5/"><cite><span>Chapter 5</span> C++ Data Types</cite></a></li>
+    <li><a href="../chapter6/"><cite><span>Chapter 6</span> C++ Variables</cite></a></li>
+    <li><a href="../chapter7/"><cite><span>Chapter 7</span> C++ Strings</cite></a></li>
+</ol>
+</nav>
+
+<footer>
+    <p><cite>Mastering C++ <br />IN 10 DAYS</cite> was written and produced by <a href="https://brianotweyo.heroku.com" class="v-card" rel="me">Brian Wilson Otweyo</a></p>
+    </footer>
+
+<script src="../js/scripts.js" defer></script>
+</body>
+</html>
+
