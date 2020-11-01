@@ -46,75 +46,31 @@
 
 <main>
 
-<h1><span>Chapter 5:</span> C++ Data Types</h1>
+<h1><span>Chapter 9:</span> C++ Booleans</h1>
+<p>Often, In programming, we will need a data type that can only have one of two values, like:</p>
+<ul>
+  <li>YES / NO</li>
+  <li>ON / OFF</li>
+  <li>TRUE / FALSE</li>
+</ul>
+<p>For this, C++ has a bool data type, which can take the values true (1) or false (0).</p>
+<h5>Boolean Values</h5>
+<p>A boolean variable is declared with the bool keyword and can only take the values true or false:</p>
+<h6>Code Snippet: </h6>
+<script src="https://gist.github.com/brianwilsonotweyo/e3fb0bc93a4bec5c1ca3e011d7d41402.js"></script>
+<p>From the Snippet above, you can read that a true value returns 1, and false returns 0.</p>
+<p>However, it is more common to return boolean values from boolean expressions</p>
+<h5>Boolean Expression</h5>
+<p>A Boolean expression is a C++ expression that returns a boolean value: 1 (true) or 0 (false).</p>
+<p>You can use a comparison operator, such as the greater than (>) operator to find out if an expression (or a variable) is true:</p>
+<h6>Code Snippet: </h6>
+<script src="https://gist.github.com/brianwilsonotweyo/9bbc82a0a9dad7afafa8c94b7b40a934.js"></script>
+<p>Alternatively</p>
+<script src="https://gist.github.com/brianwilsonotweyo/861033d354befd15841595388e02c61c.js"></script>
+<p>In the examples below, we use the equal to (==) operator to evaluate an expression:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/00412d4840e349d3d018512c8b5dc484.js"></script>
+<script src="https://gist.github.com/brianwilsonotweyo/232dbf0022c6da5292693447c717e74d.js"></script>
 
-<p>As explained in the Variables chapter, a variable in C++ must be a specified data type:</p>
-<p><strong>Note: </strong>The data type specifies the size and type of information the variable will store:</p>
-<script src="https://gist.github.com/brianwilsonotweyo/7bcac4b8ad1d95a5d3854eb123ebcb42.js"></script>
-<h4>Data-types their file size and types of information they store</h4>
-<table class="table" style="color: dodgerblue;">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Data Type</th>
-        <th scope="col">Size</th>
-        <th scope="col">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>int</td>
-        <td>4 bytes</td>
-        <td>Stores whole numbers, without decimals</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>float</td>
-        <td>4 bytes</td>
-        <td>Stores fractional numbers, containing one or more decimals. </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>double</td>
-        <td>8 bytes</td>
-        <td>Stores fractional numbers, containing one or more decimals. </td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>boolean</td>
-        <td>1 byte</td>
-        <td>Stores true or false values</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>char</td>
-        <td>1 byte</td>
-        <td>Stores a single character/letter/number</td>
-      </tr>
-    </tbody>
-  </table>
-
-<h4>C++ Numeric Data Types</h4>
-<p>Use int when you need to store a whole number without decimals, like 35 or 1000, and float or double when you need a floating point number (with decimals), like 9.99 or 3.14515.</p>
-<p>Int:</p><script src="https://gist.github.com/brianwilsonotweyo/801586a5cd065e1f0246e55ec412440e.js"></script>
-<p>Float:</p><script src="https://gist.github.com/brianwilsonotweyo/8cf888bedfc2065a0ab5dd03ae4a0e3d.js"></script>
-<p>Double:</p><script src="https://gist.github.com/brianwilsonotweyo/8bc1da96ff9719042e67e3080c949abd.js"></script>
-<h4>float vs. double</h4>
-<p>The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. Therefore it is safer to use double for most calculations.</p>
-<h4>Scientific Numbers</h4>
-<p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
-<script src="https://gist.github.com/brianwilsonotweyo/65456ec806a1c37b042827ed6031b340.js"></script>
-<h4>C++ Boolean Data Types</h4>
-<p>A boolean data type is declared with the bool keyword and can only take the values true or false. When the value is returned, true = 1 and false = 0.</p>
-<script src="https://gist.github.com/brianwilsonotweyo/3f73da97ae3fa9794d6840030a1beb5f.js"></script>
-<h4>C++ Character Data Types</h4>
-<p>The char data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
-<script src="https://gist.github.com/brianwilsonotweyo/7ff27b8c25ff8cda911461030edba809.js"></script>
-<p><strong>Note:</strong>The string type is used to store a sequence of characters (text). This is not a built-in type, but it behaves like one in its most basic usage. String values must be surrounded by double quotes:</p>
-<h4>C++ String Data Types</h4><script src="https://gist.github.com/brianwilsonotweyo/5d968434a7c00fa4cc3e751084dff885.js"></script>
-<p><strong>Note:</strong>To use strings, you must include an additional header file in the source code, the <string> library:</p>
-<script src="https://gist.github.com/brianwilsonotweyo/ceecafa4b9ae7117e910fb317940af14.js"></script>
 </main>
 
 <nav>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,54 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
-
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
+<h1><span>Chapter 13:</span> C++ Arrays</h1>
+<p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+<p>To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e11069de4b8dbc388a740ec920bc20bb.js"></script>
+<p>We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/c4111fd04e7d9587648579adf4cd9eba.js"></script>
+<p>To create an array of three integers, you could write:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/7cbcf176ea5223f1e569c887befe6fd4.js"></script>
+<h5>Access the Elements of an Array</h5>
+<p>You access an array element by referring to the index number.</p>
+<p>This statement accesses the value of the first element in cars:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e353e172fd56dcfdedff7dffe9e747ce.js"></script>
+<p style="color: dodgerblue;">Note: Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p>
+<h5>Change an Array Element</h5>
+<p>To change the value of a specific element, refer to the index number:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/51bd7dceb8fb6e080e3f6ba0bd8fc005.js"></script>
+<script src="https://gist.github.com/brianwilsonotweyo/8a5c91d0ba8d2d488e0d93773846f9bc.js"></script>
+<h5>Loop Through an Array</h5>
+<p>You can loop through the array elements with the for loop.</p>
+<p>The following example outputs all elements in the cars array</p>
+<script src="https://gist.github.com/brianwilsonotweyo/78a27470a627fb7e625e4de61a27cb37.js"></script>
+<p>The following example outputs the index of each element together with its value:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/65a15ad65ab3ae758849339712e7fdff.js"></script>
+<h5>Omit Array Size</h5>
+<p>You don't have to specify the size of the array. But if you don't, it will only be as big as the elements that are inserted into it:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/1e727e0398b57504b5a673eadc90c499.js"></script>
+<p>This is completely fine. However, the problem arise if you want extra space for future elements. Then you have to overwrite the existing values:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/31e98c0b22303a4f0e13392925f1e8d2.js"></script>
+<p>If you specify the size however, the array will reserve the extra space:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/42982599b0b72f1efb665de25fa8ffc2.js"></script>
+<p>Now you can add a fourth and fifth element without overwriting the others:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/f7e15bc346bdc109db21f0905357d2ad.js"></script>
+<h5>Omit Elements on Declaration</h5>
+<p>It is also possible to declare an array without specifying the elements on declaration, and add them later:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/9db9fbbd90c39c50f673c6087558bfd4.js"></script>
 
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +116,5 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,54 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
+<h1><span>Chapter 18:</span> C++ Access Specifiers</h1>
+<p>By now, you are quite familiar with the public keyword that appears in all of our class examples:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/9a1a7df97f6f18acce1f566cf40b808e.js"></script>
+<p>The public keyword is an access specifier. Access specifiers define how the members (attributes and methods) of a class can be accessed. In the example above, the members are public - which means that they can be accessed and modified from outside the code.</p>
 
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
-
+<p>However, what if we want members to be private and hidden from the outside world?</p>
+<p>In C++, there are three access specifiers:</p>
+<ul>
+    <li><strong style="color: royalblue;">public</strong>  - members are accessible from outside the class</li>
+    <li><strong style="color: royalblue;">private</strong> - members cannot be accessed (or viewed) from outside the class</li>
+    <li><strong style="color: royalblue;">protected</strong> - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. You will learn more about Inheritance later.</li>
+</ul>
+<p>In the following example, we demonstrate the differences between public and private members:</p>
+<p>If you try to access a private member, an error occurs:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/6766ae06abf0c0ec428dd431d8f48789.js"></script>
+<p style="color:red;">error: y is private</p>
+<p style="color:rgb(208, 255, 0);">Note: It is possible to access private members of a class using a public method inside the same class we'll  See this in the next section (Encapsulation) on how to do this.</p>
+<p style="color:rgb(136, 255, 0);">Tip: It is considered good practice to declare your class attributes as private (as often as you can). This will reduce the possibility of yourself (or others) to mess up the code. This is also the main ingredient of the Encapsulation concept, which you will learn more about in the next chapter.</p>
+<p>Note: By default, all members of a class are private if you don't specify an access specifier:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/4c10cfcea74370968c4b3364438968a7.js"></script>
+<h6>Encapsulation</h6>
+<p>The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must declare class variables/attributes as private (cannot be accessed from outside the class). If you want others to read or modify the value of a private member, you can provide public get and set methods.</p>
+<h6>Access Private Members</h6>
+<p>To access a private attribute, use public "get" and "set" methods:</p>
+<h6>Example</h6>
+<script src="https://gist.github.com/brianwilsonotweyo/c054130e48e34c6b56fb3246762948bd.js"></script>
+<p>Example explained</p>
+<p>The salary attribute is private, which have restricted access.</p>
+<p>The public setSalary() method takes a parameter (s) and assigns it to the salary attribute (salary = s).</p>
+<p>The public getSalary() method returns the value of the private salary attribute.</p>
+<p>Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set the value of the private attribute to 50000. Then we call the getSalary() method on the object to return the value.</p>
+<h6>Why Encapsulation?</h6>
+<ul>
+    <li>It is considered good practice to declare your class attributes as private (as often as you can). Encapsulation ensures better control of your data, because you (or others) can change one part of the code without affecting other parts</li>  
+    <li>Increased security of data</li>
+</ul>
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +116,10 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+
+
+
+
+
+

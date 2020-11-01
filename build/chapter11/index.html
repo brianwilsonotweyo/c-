@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,49 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
-
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
-
+<h1><span>Chapter 11:</span> C++ While and For Loop</h1>
+<h5>C++ Loops</h5>
+<p>Loops can execute a block of code as long as a specified condition is reached.</p>
+<p>Loops are handy because they save time, reduce errors, and they make code more readable.</p>
+<h5>C++ While Loop</h5>
+<p>The  <strong style="color: red;">while</strong> loop loops through a block of code as long as a specified condition is  <strong style="color: red;">true</strong>:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/39e06600ea65568b7510740b45e99ee9.js"></script>
+<p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/38bd9eaf30163673c0622a084213b021.js"></script>
+<p style="color: red;">Note: Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+<h5>C++ Do/While Loop</h5>
+<p>The <strong style="color: red;">do/while</strong>  loop is a variant of the <strong style="color: red;">while</strong>  loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+<script src="https://gist.github.com/brianwilsonotweyo/613703a67df0202672e002f54a4ca5d1.js"></script>
+<p>The example below uses a <strong style="color: red;">do/while</strong> loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/ac32b15ea4ad3e40fcb5041356450e95.js"></script>
+<p style="color: red;">Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+<h5>C++ For Loop</h5>
+<p>When you know exactly how many times you want to loop through a block of code, use the <strong style="color: red;">for</strong> loop instead of a <strong style="color: red;">while</strong> loop:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/01f467759d72298c8b52eaf65ded3b43.js"></script>
+<p>Statement 1 is executed (one time) before the execution of the code block.</p>
+<p>Statement 2 defines the condition for executing the code block.</p>
+<p>Statement 3 is executed (every time) after the code block has been executed.</p>
+<p>The example below will print the numbers 0 to 4:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/334969a7b714eb74706910cef61101aa.js"></script>
+<h6>Example explained</h6>
+<p>Statement 1 sets a variable before the loop starts (int i = 0).</p>
+<p>Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.</p>
+<p>Statement 3 increases a value (i++) each time the code block in the loop has been executed.</p>
+<h6>Another Example</h6>
+<p>This example will only print even values between 0 and 10:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e9cc58b0201258139e7ae24f25be3dba.js"></script>
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +111,4 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+

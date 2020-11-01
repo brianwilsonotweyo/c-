@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,52 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
+<h1><span>Chapter 19:</span> C++ Inheritance</h1>
+<p>In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:</p>
+<ul>
+    <li>base class (parent) - the class being inherited from</li>
+    <li>derived class (child) - the class that inherits from another class</li>
+</ul>
+<p>To inherit from a class, use the : symbol.</p>
+<p>In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):</p>
+<script src="https://gist.github.com/brianwilsonotweyo/6ad085c9282c7bb365106c4d61b7878e.js"></script>
+<div style="background-color: aquamarine;">
+    <p>Why And When To Use "Inheritance"?
+        - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.</p>
+</div>
+<h5>Multilevel Inheritance</h5>
+<p>A class can also be derived from one class, which is already derived from another class.</p>
+<p>In the following example, MyGrandChild is derived from class MyChild (which is derived from MyClass).</p>
+<script src="https://gist.github.com/brianwilsonotweyo/0657d560462a48fb8328c514afd39b12.js"></script>
+<h5>Multiple Inheritance</h5>
+<p>A class can also be derived from more than one base class, using a comma-separated list:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/68024b0fbf560a0d6aeafdf65195a69f.js"></script>
+<h5>Polymorphism</h5>
+<p>Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.</p>
+<p>Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.</p>
+<p>For example, think of a base class called Animal that has a method called animalSound(). Derived classes of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):</p>
+<script src="https://gist.github.com/brianwilsonotweyo/b1814bfe0aa2e28a0d870c5e1c9782ce.js"></script>
+<div style="background-color: aquamarine;"><p >Remember from that we use the : symbol to inherit from a class.</p></div>
+<p>Now we can create Pig and Dog objects and override the animalSound() method:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/9a072facd05e010fb66ff72ebe0f69a0.js"></script>
 
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
+<div style="background-color: aquamarine;">
+    <h6>Why And When To Use "Inheritance" and "Polymorphism"?</h6>
+    <p>- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.</p>
+</div>
 
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +114,11 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

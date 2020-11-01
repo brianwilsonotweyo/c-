@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,34 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
-
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
-
+<h1><span>Chapter 14:</span> C++ References</h1>
+<p>A reference variable is a "reference" to an existing variable, and it is created with the & operator:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/281bf08259207e27ce99c810898aafa6.js"></script>
+<p>Now, we can use either the variable name food or the reference name meal to refer to the food variable:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/f1be590788f0635f4a4eb09c43b62a46.js"></script>
+<h5>C++ Memory Address</h5>
+<p>In the example from the previous page, the & operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.</p>
+<p>When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.</p>
+<p>To access it, use the & operator, and the result will represent where the variable is stored:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/125db1e3493909aa1916a375f163df42.js"></script>
+<p>Note: The memory address is in hexadecimal form (0x..). Note that you may not get the same result in your program.</p>
+<div style="background-color: yellowgreen; color:blueviolet;">
+    <p>And why is it useful to know the memory address?</p>
+    <p>References and Pointers (which you will learn about in the next chapter) are important in C++, because they give you the ability to manipulate the data in the computer's memory - which can reduce the code and improve the perfomance.</p>
+    <p>These two features are one of the things that make C++ stand out from other programming languages, like Python and Java.</p>
+</div>
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +96,5 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+

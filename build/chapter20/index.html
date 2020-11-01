@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,53 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
+<h1><span>Chapter 20:</span> C++ Files & Exceptions</h1>
+<p>The fstream library allows us to work with files.</p>
+<p>To use the fstream library, include both the standard <iostream> AND the <fstream> header file:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/68b60af6cc9e56232705a40e4d81ff45.js"></script>
+<h6>Create and Write To a File</h6>
+<p>To create a file, use either the ofstream or fstream class, and specify the name of the file.</p>
+<p>To write to the file, use the insertion operator (<<).</p>
+<script src="https://gist.github.com/brianwilsonotweyo/9b9150c41706f485b67778bfda8c5ea9.js"></script>
+<h6>Read a File</h6>
+<p>To read from a file, use either the ifstream or fstream class, and the name of the file.</p>
+<p>Note that we also use a while loop together with the getline() function (which belongs to the ifstream class) to read the file line by line, and to print the content of the file:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/e47d267f5cf484a126032b7184d06f96.js"></script>
 
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
-
+<h5>C++ Exceptions</h5>
+<p>When executing C++ code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.</p>
+<p>When an error occurs, C++ will normally stop and generate an error message. The technical term for this is: C++ will throw an exception (throw an error).</p>
+<h6>C++ try and catch</h6>
+<p>Exception handling in C++ consist of three keywords: try, throw and catch:</p>
+<p>The try statement allows you to define a block of code to be tested for errors while it is being executed.</p>
+<p>The throw keyword throws an exception when a problem is detected, which lets us create a custom error.</p>
+<p>The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.</p>
+<p>The try and catch keywords come in pairs:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/59ca6a4f8e65333e3e8c75084ed329d0.js"></script>
+<p>Consider the following example:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/0d71820dd98c2d333b816606e3716bb6.js"></script>
+<h6>Example explained</h6>
+<p>We use the try block to test some code: If the age variable is less than 18, we will throw an exception, and handle it in our catch block.</p>
+<p>In the catch block, we catch the error and do something about it. The catch statement takes a parameter: in our example we use an int variable (myNum) (because we are throwing an exception of int type in the try block (age)), to output the value of age.</p>
+<p>If no error occurs (e.g. if age is 20 instead of 15, meaning it will be be greater than 18), the catch block is skipped:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/affa14dc3ba4b5eeb5cc7c1f8bb2d95c.js"></script>
+<p>You can also use the throw keyword to output a reference number, like a custom error number/code for organizing purposes:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/f2bcac308dc52663f7aacf55164ef5c8.js"></script>
+<h5>Handle Any Type of Exceptions (...)</h5>
+<p>If you do not know the throw type used in the try block, you can use the "three dots" syntax (...) inside the catch block, which will handle any type of exception:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/ac264abe507ebf29a69180d496fdcc56.js"></script>
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +115,11 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

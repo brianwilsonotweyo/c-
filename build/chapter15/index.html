@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#5f7995" />
@@ -38,26 +38,41 @@
     <link rel="icon shortcut" href="../images/icon512.png" sizes="512x512" type="image/png" />
     <link rel="apple-touch-icon" href="../images/icon512.png" type="image/png" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" /></head>
-</head>
 <body>
 
 <header>
 <a href="../">Mastering C++ IN 10 DAYS</a>
 </header>
 
-<main class="v-card">
+<main>
 
-<h1>About the author</h1>
+<h1><span>Chapter 15:</span> C++ Pointers</h1>
+<p>You learned from the previous chapter, that we can get the memory address of a variable by using the & operator:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/791d3d4003b0300fec66df3b9b165357.js"></script>
+<p>A pointer however, is a variable that stores the memory address as its value.</p>
+<p>A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/1809aab49d23d84c65330de3cc0677c8.js"></script>
+<h5>Example explained</h5>
+<p>Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.</p>
+<p>Use the & operator to store the memory address of the variable called food, and assign it to the pointer.</p>
+<p>Now, ptr holds the value of food's memory address.</p>
+<p style="background-color: yellowgreen;">Tip: There are three ways to declare pointer variables, but the first way is preferred:
+    <script src="https://gist.github.com/brianwilsonotweyo/4a1d9e7d2667e50f7e45df41f069ec6a.js"></script>
+</p>
 
-<p>My name is <span class="p-name">Brian Wilson Otweyo</span>.<br />I am a Developer at <a href="https://www.yourduuka.com" class="p-org">YourDuuka</a>, a webstore that I co‐founded in late 2018. My personal info is on my website: <a href="https://brianotweyo.herokuapp.com" rel="me" class="u-url">brianotweyo.herokuapp.com</a> where my portfolio has been displayed.</p>
-
-<p>Before writing <cite>Mastering C++ IN 10 DAYS</cite> I've written various programming lessons on notion before i decided to convert them it to webbooks </p>
-<p>My email address is <a href="mailto:brianotweyo@gmail.com" class="u-email">brianotweyo@gmail.com</a> if you’d like to consult more on programming.</p>
+<h5>C++ Dereference</h5>
+<h6>Get Memory Address and Value</h6>
+<p>In the example from the previous page, we used the pointer variable to get the memory address of a variable (used together with the & reference operator). However, you can also use the pointer to get the value of the variable, by using the * operator (the dereference operator):</p>
+<h6>Example</h6>
+<script src="https://gist.github.com/brianwilsonotweyo/44c53ae8ee4276381b5e8ba3efea3268.js"></script>
+<h5>C++ Modify Pointers</h5>
+<p>You can also change the pointer's value. But note that this will also change the value of the original variable:</p>
+<script src="https://gist.github.com/brianwilsonotweyo/d6cae8ca418f1128780282719b822c86.js"></script>
 
 </main>
 
 <nav>
- <li><a href="../introduction/"><cite>Introduction</cite></a></li>
+<a href="../chapter6/" rel="next"><cite><span>Chapter 6:</span> C++ Operators</cite></a>
 <ol start="0">
     <li><a href="../introduction/"><cite>Introduction</cite></a></li>
     <li><a href="../chapter1/"><cite><span>Chapter 1</span> Understanding C++ Syntax</cite></a></li>
@@ -88,3 +103,5 @@
 <script src="../js/scripts.js" defer></script>
 </body>
 </html>
+
+
